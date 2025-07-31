@@ -1,0 +1,7 @@
+
+0 → P   (Petrol)
+1 → D   (Diesel)
+2 → H   (Hybrid)
+3 → E   (Electric)
+4 → PH  (Plug-in Hybrid)
+5 → HD  (Hydrogen)
