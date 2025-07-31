@@ -76,5 +76,4 @@ This project aims to build a machine learning model that predicts car prices bas
 
 ---
 
-## 📂 File Structure
 
