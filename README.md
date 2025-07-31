@@ -80,3 +80,7 @@ This project aims to build a machine learning model that predicts car prices bas
 - Used AI assistance for cleaning, mapping, and restructuring columns for compatibility
 
 ---
+
+## 📌 Note
+
+Due to running out of CUH (Compute Unit Hours) after multiple experiments and data tests, I had to **change the IBM account email** used for Watson Studio, IBM Cloud, and the Watson runtime. The **new email (not which i used to register for the IBM PBEL Program)** helped me continue the project by resetting CUH limits and allowing further development under the same PBEL initiative.
