@@ -16,6 +16,7 @@ This project aims to build a machine learning model that predicts car prices bas
      Company/Brand, Battery_CC, Battery_kWh, Horsepower (hp), Top Speed (km/h),
      Acceleration, Price ($), Fuel Type, Seats, Torque (Nm)
      ```
+   - Had to take a bit of help from AI due to the dataset being too informal and inconsistent for direct use in ML training.
 
 2. **Model Training**
    - IBM Watson AutoAI was used to automatically:
@@ -26,6 +27,8 @@ This project aims to build a machine learning model that predicts car prices bas
      - Evaluate performance
    - Trained on 1000 random rows
    - Tested on remaining ~219 rows
+   - Due to multiple experiments and tests, the default Watson runtime environment's CUH (Compute Unit Hours) ran out.
+   - A second Watson runtime environment was created to continue the project with available CUH credits.
 
 3. **Prediction and Evaluation**
    - Model deployed through AutoAI
@@ -55,14 +58,14 @@ This project aims to build a machine learning model that predicts car prices bas
 
 ## 🔄 Fuel_Type Mapping
 
-| Encoded Value | Meaning           |
-|---------------|-------------------|
-| 0             | P   (Petrol)      |
-| 1             | D   (Diesel)      |
-| 2             | H   (Hybrid)      |
-| 3             | E   (Electric)    |
-| 4             | PH  (Plug-in Hybrid) |
-| 5             | HD  (Hydrogen)    |
+| Encoded Value | Meaning             |
+|---------------|---------------------|
+| 0             | P   (Petrol)        |
+| 1             | D   (Diesel)        |
+| 2             | H   (Hybrid)        |
+| 3             | E   (Electric)      |
+| 4             | PH  (Plug-in Hybrid)|
+| 5             | HD  (Hydrogen)      |
 
 ---
 
@@ -71,9 +74,9 @@ This project aims to build a machine learning model that predicts car prices bas
 - Inconsistent and messy data formats (e.g., `"100 - 140 Nm"`, `"800 Nm"`, `"GT Model"`, etc.)
 - Missing values in numerical and categorical columns
 - AutoAI model failure due to unsupported imputation on categorical missing values
-- Limited CUH (Compute Units Hours) in IBM Watson Studio (only 0.08 left)
-- Had to preprocess everything manually to ensure AutoAI could work smoothly
+- Limited CUH (Compute Units Hours) in IBM Watson Studio (only 0.08 left at one point)
+- Created a second Watson runtime to overcome CUH exhaustion and continue experiments
+- Manually preprocessed columns to make the dataset ML-ready
+- Used AI assistance for cleaning, mapping, and restructuring columns for compatibility
 
 ---
-
-
