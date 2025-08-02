@@ -1,0 +1,6 @@
+numpy
+getpass
+ibm-watsonx-ai
+autoai-libs
+snapml
+scikit-learn
